@@ -1,0 +1,10 @@
+import java.io.*;
+import java.util.Scanner;
+class Day1{
+	public static void main(String[] arg){	
+		System.out.println("First line");
+		System.out.print("second line");
+		System.out.println("Third line");
+		System.out.print("Fourth line");
+	}
+}
