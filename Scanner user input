@@ -1,0 +1,11 @@
+import java.io.*;
+import java.util.Scanner;
+class Try{
+	public static void main(String[] arg){
+		Scanner input= new Scanner(System.in);
+		int a;
+		a=input.nextInt();
+		System.out.println(a);
+		
+	}
+}
