@@ -1,0 +1,19 @@
+public class Welcome{
+    public static void main(String[] args){
+        char attendance = 'P';
+        switch (attendance){
+            case 'O':
+                System.out.println("On-Duty");
+                break;
+            case 'P':
+                System.out.println("Present");
+                break;
+            case 'A': 
+                System.out.println("Absent");
+                break;
+            
+            default:
+                System.out.println("Invalid");
+        }
+    }
+}
