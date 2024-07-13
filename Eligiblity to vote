@@ -1,0 +1,22 @@
+public class Main{
+    public static void main(String[] args){
+       int age = 17;
+       switch(age){
+          case 20:
+              System.out.println("You are eligible to vote");
+             break;
+          case 17:
+              System.out.println("You are not eligible to vote");
+              break;
+          case 18:
+              System.out.println("You are eligible to vote");
+              break;
+          case 15:
+              System.out.println("You are not eligible to vote");
+              break;
+          default:
+              System.out.println("Invalid");
+              
+       }
+}
+}
