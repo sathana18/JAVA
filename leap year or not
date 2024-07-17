@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] arg){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the year : ");
+        int year = scanner.nextInt();
+        if(year==2020)
+        {
+            System.out.println("2020 is a leap year");
+        }
+        else if(year==1900)
+        {
+            System.out.println("1900 is not a leap year");
+        }
+        else if(year==2000)
+        {
+        System.out.println("2000 is a leap year");
+        }
+        else if(year==2019)
+        {
+            System.out.println("2019 is not a leap year");
+        }
+    }
+}
