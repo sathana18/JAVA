@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class BmiCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your weight (in kg): ");
+        double weight = scanner.nextDouble();
+
+        System.out.print("Enter your height (in m): ");
+        double height = scanner.nextDouble();
+
+        double bmi = calculateBmi(weight, height);
+        String category = getBmiCategory(bmi);
+
+        System.out.printf("BMI: %.2f, Category: %s%n", bmi, category);
+    }
+
+    private static double calculateBmi(double weight, double height) {
+        return weight / (height * height);
+    }
+
+    private static String getBmiCategory(double bmi) {
+        if (bmi < 18.5) {
+            return "Underweight";
+        } else if (bmi < 24.9) {
+            return "Normal weight";
+        } else if (bmi < 29.9) {
+            return "Overweight";
+        } else {
+            return "Obesity";
+        }
+    }
+}
