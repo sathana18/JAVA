@@ -1,0 +1,15 @@
+class AppForm{
+    String name;
+    int rollno;
+    
+    public void display(){
+        System.out.println(name);
+        System.out.println(rollno);
+    }
+    public static void main(String[] args){
+        AppForm student = new AppForm();
+        student.name = "Sathana";
+        student.rollno = 44;
+        student.display();
+    }
+}
