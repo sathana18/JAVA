@@ -1,0 +1,15 @@
+class Abstract{
+    public static void main(String[] args){
+        HP ob = new HP();
+        ob.turnOn();
+    }
+}
+abstract class Computer{
+    
+    void turnOn(){
+        System.out.println("turning ON");
+    }
+}
+class HP extends Computer{
+    
+}
