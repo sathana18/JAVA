@@ -1,0 +1,36 @@
+class Inheritance{
+    public static void main(String[] args){
+      
+    Aunty a = new Aunty();
+    System.out.println(a.gender);
+    a.print();
+    
+    GrandDaughter g = new GrandDaughter();
+    System.out.println(g.gender);
+    g.print();
+    
+    Uncle u = new Uncle();
+    System.out.println(u.gender);
+    u.print();
+   
+    }
+}
+class GrandFather{
+    char gender = 'M';
+    void print(){
+        System.out.println("Parent class");
+    }
+}
+class Aunty extends GrandFather{
+       char gender = 'F';
+
+}
+class Uncle extends GrandFather{
+    char gender = 'M';
+    
+}
+class GrandDaughter extends Aunty{
+    void print(){
+    System.out.println("GrandDaughter");
+  }
+}
