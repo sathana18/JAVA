@@ -1,0 +1,29 @@
+interface Father{
+    abstract void call();
+    abstract void sleep();
+}
+interface Mother{
+    abstract void walk();
+    abstract void eat();
+}
+class Son implements Father,Mother{
+    public void call(){
+        System.out.println("Calling");
+    }
+    public void sleep(){
+        System.out.println("Sleeping");
+    }
+    public void walk(){
+        System.out.println("Walking");
+    }
+    public void eat(){
+        System.out.println("Eating");
+    }
+    public static void main(String[] args){
+        Son obj = new Son();
+        obj.call();
+        obj.sleep();
+        obj.walk();
+        obj.eat();
+    }
+}
